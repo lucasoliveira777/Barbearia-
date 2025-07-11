@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+
+}
+h1 {
+
+    font-family: Exo;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+
+}
+
+span

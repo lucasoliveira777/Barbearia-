@@ -1,17 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
 
+:root {
+--primaria: #E6B07E;
+        --secundaria: #665E57;
+        --tom1: #EAD8C7;
+        --tom2: #B38962;
+        --tom3: #664E38;
 
-:root{
+        background-color: var(--tom1);
 
 }
-h1 {
+h1{
+color: var(--Cor-Secundaria, #665E57);
 
     font-family: Exo;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
-    line-height: 100%;
-
+    line-height: 100%; /* 48px */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+span{
+    color: var(--Tom-3, #664E38);
+    font-weight: 800;
 }
 
-span
+div[role=mask]{
+    width: 90%;
+    height: 260px;
+border-radius: 8px;
+display: flex;
+justify-content: center;
+    overflow: hidden;
+    filter: drop-shadow(0px 24px 34px #00000025);
+}
+
+[role=logo] {
+    width: 160px;
+    height: 160px;
+
+    background-color: black;
+
+    mask: url('public/logo.svg');
+    mask-size: 100%;
+}
+
+img{
+width: 100%;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Source Serif 4, serif";
+    color: #00000095;
+}

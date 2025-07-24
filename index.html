@@ -144,7 +144,7 @@
             <a role="button" href="mailto:brayamsn78@gmail.com"><i data-feather="mail"></i> Nos envie um email</a>
             <script src="https://unpkg.com/feather-icons"></script>
 
-            <a class="whatsapp-link" role="button" href="https://wa.me/5511977698254">
+            <a class="whatsapp-link items-left" role="button" href="https://wa.me/5511977698254">
                 <div class="whatsapp-icon"></div>Fale conosco
 
             </a>
@@ -203,15 +203,30 @@
                     </address>
                 </div>
             </swiper-slide>
+             <swiper-slide>
+                <div class="map">
+                    <div class="map-mask">
+                        <img src="public/slide-3.jpg" alt="imagem da unidade 4" style="width: 100%;">
+                    </div>
+                    <address class="flex flex-col gap-1">
+                        <h2>
+                            Av. Marechal Tito 1500
+                        </h2>
+                        <h3>
+                            São Miguel Paulista, São Paulo
+                        </h3>
+                    </address>
+                </div>
+            </swiper-slide>
         </swiper-container>
     </section>
 
 
     <footer>
-        <div class="flex justify-between">
+        <div class="flex justify-between items-center">
             <div role="logo"></div>
 
-            <nav class="flex gap-4 items-center">
+            <nav class="flex gap-8 flex-col">
                 <a href="#">Contato</a>
                 <a href="#">Unidades</a>
                 <a href="#">Serviços</a>
@@ -230,10 +245,13 @@
 
         const menu = document.querySelector("dialog")
 
-         document.querySelector(".swiper-unidades"). breakpoints ={
+         document.querySelector(".swiper-container"). breakpoints = {
           400: {
-            spaceBetween: -116
-          }
+            spaceBetween:-116
+          },
+          768: {
+            spaceBetween:-356
+        },
          }
     </script>
 </body>

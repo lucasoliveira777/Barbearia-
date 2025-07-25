@@ -9,7 +9,6 @@
   --tom2: #b38962;
   --tom3: #664e38;
 
-  scroll-behavior: smooth;
   background: var(--tom1);
 }
 
@@ -260,25 +259,27 @@
       flex-direction: row;
     }
   }
-
   @media (min-width: 1024px) {
     & h1 {
       text-align: center;
     }
-
     & [role="mask"] {
-      height: 50vh;
+      height: 50svh;
       max-width: 80%;
       margin: 0 auto;
     }
 
-    & a {
-      width: 35%;
-    }
+   & a {
+    width: 30%;
+   }
 
-    & .buttons-spacer {
-      justify-content: center;
-    }
+   & .buttons-spacer {
+    justify-content: center;
+   }
+
+   & a {
+    width: 35%;
+   }
   }
 
 }
@@ -302,12 +303,6 @@
   @media(min-width:760px) {
     padding-bottom: 128px;
 
-    & p {
-      margin: 64px 128px;
-    }
-  }
-
-  @media(min-width:1024px) {
     & p {
       margin: 64px auto;
       max-width: 50%;
@@ -338,7 +333,6 @@
 }
 
 [role="mask"] {
-  width: 100%;
   height: 260px;
   border-radius: 8px;
   overflow: hidden;
@@ -569,10 +563,10 @@ footer {
     color: var(--tom1);
   }
 
-  @media(min-width:1024px) {
+  @media (max-width:1024px) {
     max-width: 1024px;
     margin: 0 auto;
-    border-radius: 16px 16px 0px 0px;
+    border-radius: 16px 16xpx 0 0;
     overflow: hidden;
 
     & [role="logo"] {
@@ -611,10 +605,6 @@ dialog {
     width: 96px;
     height: 96px;
     background-color: white;
-  }
-
-  & a {
-    cursor: pointer;
   }
 
   & a,
